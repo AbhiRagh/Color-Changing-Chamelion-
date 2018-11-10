@@ -1,0 +1,79 @@
+:root {
+  --h: 200;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: #052530;
+}
+
+#jungle {
+  position: absolute;
+  display: block;
+  background-image: linear-gradient(hsla(var(--h), 5%, 1%, 0), hsla(var(--h), 90%, 1%, 1)), url(https://images.unsplash.com/photo-1516528387618-afa90b13e000?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=9b98afc9486dcb6e25f5daa32f351625);
+  background-color: hsl(var(--h), 30%, 35%);
+  background-blend-mode: overlay;
+  background-size: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70vh;
+  height: 70vh;
+  border: solid 5px hsl(var(--h), 30%, 35%);
+  border-radius: 50%;
+  transition: background-color 0.8s ease-out;
+}
+
+.green {
+  fill: #62bc86;
+}
+
+.lightgreen {
+  fill: #22b895;
+}
+
+.branch {
+  fill: #4e4e4d;
+}
+
+.tongue {
+  fill: #ea88b5;
+}
+
+#tongue, #blob {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.change {
+  fill: hsl(var(--h), 50%, 50%);
+  transition: fill 0.8s ease-out;
+}
+
+.changeLight {
+  fill: hsl(var(--h), 50%, 70%);
+  transition: fill 0.8s ease-out;
+}
+
+#box {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-color: green;
+  transition: all 1s ease;
+}
+
+#flypath {
+  fill: none;
+  stroke: none;
+}
+
+#fly {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#flybody {
+  fill: #424242;
+}
